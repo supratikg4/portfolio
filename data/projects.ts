@@ -6,6 +6,7 @@ export interface Project {
   tech: string[];
   link: string;
   image: string;
+  images?: string[];
 }
 
 export const projects: Project[] = [
@@ -22,17 +23,6 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "WolfCafe",
-    category: "Software Engineering",
-    description:
-      "Engineered a full-stack web ordering platform in an Agile environment. Developed backend services and REST APIs, collaborating through Git version control and CI/CD pipelines. Designed SQL relational database schemas to ensure data integrity and security.",
-    tech: ["Spring Boot", "Angular", "Node.js", "SQL", "REST APIs", "CI/CD"],
-    link: "#",
-    image:
-      "/projects/home_screen.png",
-  },
-  {
-    id: 3,
     title: "Transit Planner",
     category: "Optimization & Algorithms",
     description:
@@ -43,15 +33,26 @@ export const projects: Project[] = [
       "/projects/extra_1_high.png",
   },
   {
-    id: 4,
+    id: 3,
     title: "Sketch-to-Image GAN",
     category: "Machine Learning",
     description:
       "Implemented the pix2pix conditional GAN paper in PyTorch, TensorFlow, and Keras using U-Net generator and PatchGAN discriminator to synthesize realistic images from sparse human sketches. Improved image generation quality by 5%.",
-    tech: ["PyTorch", "TensorFlow", "Keras", "GANs", "Computer Vision"],
+    tech: ["Computer Vision", "PyTorch", "TensorFlow", "Keras", "GANs"],
     link: "#",
     image:
       "/projects/sketchygan_image.png",
+  },
+  {
+    id: 4,
+    title: "WolfCafe",
+    category: "Software Engineering",
+    description:
+      "Engineered a full-stack web ordering platform in an Agile environment. Developed backend services and REST APIs, collaborating through Git version control and CI/CD pipelines. Designed SQL relational database schemas to ensure data integrity and security.",
+    tech: ["Spring Boot", "Angular", "Node.js", "SQL", "REST APIs", "CI/CD"],
+    link: "#",
+    image:
+      "/projects/home_screen.png",
   },
   {
     id: 5,
@@ -62,6 +63,6 @@ export const projects: Project[] = [
     tech: ["R", "NLP", "Machine Learning", "Statistical Analysis"],
     link: "#",
     image:
-      "/projects/racerouter_image.png",
+      "/projects/spotify_kmeans.png",
   },
 ];

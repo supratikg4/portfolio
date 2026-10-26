@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Camera, Code, Mail, Phone } from 'lucide-react';
+import { ArrowRight, Camera, Mail, Phone, FileText } from "lucide-react";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 
@@ -11,22 +11,20 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-1">
             <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-stone-300 text-xs font-semibold tracking-widest text-stone-600 uppercase">
-              Computer Science @ NC State
+              CS @ NC State
             </div>
 
             <h1 className="text-6xl md:text-8xl font-serif text-stone-900 mb-6 leading-[1.1] tracking-tight">
               Developer.
               <br />
-              <span className="italic text-stone-500">Designer.</span>
+              <span className="italic text-stone-500">Photographer.</span>
               <br />
               Creator.
             </h1>
 
             <p className="text-lg md:text-xl text-stone-600 mb-10 max-w-lg leading-relaxed font-light">
-              I build intelligent systems through the lens of a photographer.
-              By merging rigorous computer science with creative visual design,
-              I bring a unique perspective to software engineering, data
-              science, and machine learning.
+              Interested in machine learning, software engineering, and AI systems.
+              Bringing a unique perspective to development through visual creativity.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,22 +57,14 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-stone-200 translate-x-4 translate-y-4" />
 
               <Image
-                src="/photography/APC_0642.jpg"
+                src="/tsali_profile.JPG"
                 alt="Computer workspace"
                 fill
                 priority
                 sizes="(max-width: 1024px) 90vw, 500px"
-                className="object-cover grayscale-[30%] contrast-125"
+                className="object-cover"
               />
 
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-stone-100 max-w-xs hidden md:block animate-card">
-                <Code className="text-stone-400 mb-3" size={24} />
-                <p className="text-sm text-stone-600 font-medium">
-                  &quot;Architecture and framing follow the same principles—
-                  it&apos;s all about focus, balance, and removing the
-                  unnecessary.&quot;
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -143,6 +133,20 @@ export default function HomePage() {
               </div>
               <span className="text-xs font-medium">LinkedIn</span>
             </a>
+
+            <a
+              href="/gujulvakarthicbabu_supratik_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume (PDF)"
+              className="flex flex-col items-center gap-2 text-stone-500 hover:text-stone-900 transition-colors group"
+            >
+              <div className="p-4 bg-white border border-stone-200 rounded-full group-hover:border-stone-900 shadow-sm">
+                <FileText size={24} />
+              </div>
+              <span className="text-xs font-medium">Resume</span>
+            </a>
+
           </div>
         </div>
       </section>

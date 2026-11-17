@@ -88,9 +88,9 @@ export default function PhotographyPage() {
 
     columnHeights[targetColumn] += estimatedHeight;
 
-    if (span === 2) {
+    /*if (span === 2) {
       columnHeights[targetColumn + 1] += estimatedHeight;
-    }
+    }*/
   }
 
   return (

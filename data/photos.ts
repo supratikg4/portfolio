@@ -26,13 +26,13 @@ export const photos: Photo[] = [
   },
   {
     id: 4,
-    url: "/photography/beach_birds.jpg",
+    url: "/photography/beach_birds.JPG",
     aspect: "portrait",
     alt: "Daytona Beach, FL",
   },
   {
     id: 5,
-    url: "/photography/boys_silhouettes.jpg",
+    url: "/photography/boys_silhouettes.JPG",
     aspect: "portrait",
     alt: "Lake Raleigh, NC State University",
   },

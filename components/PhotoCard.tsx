@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { createPortal } from "react-dom";
 import type { Photo } from "@/data/photos";
 
@@ -65,10 +66,13 @@ export function PhotoCard({ photo, className = "" }: PhotoCardProps) {
         aria-label={`Expand photo: ${photo.alt}`}
       >
         <div className="relative overflow-hidden bg-stone-200">
-          <img
-            src={photo.url}
+          <Image
+            src={photo.thumbnailUrl}
             alt={photo.alt}
-            loading="lazy"
+            width={1200}
+            height={1200}
+            priority={photo.id <= 4}
+            sizes="(max-width: 768px) 50vw, 25vw"
             className="block h-auto w-full transition-transform duration-700 group-hover:scale-[1.02]"
           />
 
@@ -110,7 +114,7 @@ export function PhotoCard({ photo, className = "" }: PhotoCardProps) {
               &times;
             </button>
 
-            {/* Animated photo */}
+            {/* Original full-resolution photo */}
             <img
               src={photo.url}
               alt={photo.alt}
